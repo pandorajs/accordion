@@ -138,7 +138,7 @@ define(function(require, exports, module) {
                 preHeader: self.curHeader,
                 curHeader: curHeader
             };
-            if (!self.fire('switch', parameter)) {
+            if (!self.fire('change', parameter)) {
                 return;
             }
             panels.removeClass(paneClass);
